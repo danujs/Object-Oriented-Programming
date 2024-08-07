@@ -1,21 +1,14 @@
-class Hero: #template
-    pass
+# __How to create a class in OOP__
 
-hero1 = Hero() #object / instance (instansiate)
-hero2 = Hero()
-hero3 = Hero();
+# 1. Adding attributes to a class
+class Bird:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
 
-hero1.name = "sniper"
-hero1.health = 100
+# 2.Instantiating objects
+# 3. Then, we can create a new Jerry object with a name and age
 
-hero2.name = "sven"
-hero2.health = 200
-
-hero3.name = "ucup"
-hero3.health = 1000
-
-print(hero1)
-print(hero1.__dict__)
-print(hero1.name)
-print(hero2.name)
-print(hero2.health)
+my_pet = Bird("Jerry", 3)
+print(my_pet.name)
+print(my_pet.age)
